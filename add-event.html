@@ -1,96 +1,114 @@
-<!DOCTYPE html><html lang="en">
-<head>
-    <title>CampusConnect - Add Event</title>
-</head>
-<body>
-    <header>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <title>CampusConnect - Add Event</title>
+    </head>
+    <body>
+        <section class="form-container">
+            <h2>Add Event</h2>
+            <form>
+                <div class="form-group">
+                    <label for="title">Event Title</label>
+                    <input type="text" id="title" placeholder="Enter event title">
+                </div>
 
-        <nav>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option>Fest</option>
+                        <option>Workshop</option>
+                        <option>Sports</option>
+                        <option>Club</option>
+                    </select>
+                </div>
 
-            <a href="index.html">Home</a>
-            <a href="events.html">Events</a>
-            <a href="event-detail.html">Event Detail</a>
-            <a href="add-event.html">Add Event</a>
-            <a href="my-registrations.html">My Registrations</a>
-        </nav>
-    </header>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+                </div>
 
-    <main>
+                    <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="5"></textarea>
+                </div>
 
-        <h1>Add New Event</h1>
-        <form>
-            <label for="event-name">Event Name</label><br>
-            <input
-            type="text"
-            id="event-name"
-            name="eventName"
-            placeholder="e.g. Annual Tech Fest"
-            required>
-            <br><br>
-
-            <label for="category">Category</label><br>
-            <select id="category" name="category" required>
-                <option value="">Select Category</option>
-                <option value="Fest">Fest</option>
-                <option value="Workshop">Workshop</option>
-                <option value="Sports">Sports</option>
-                <option value="Club">Club</option>
-            </select>
-            <br><br>
-
-        <label for="date">Date</label><br>
-        <input type="date" id="date" name="date" required>
-        <br><br>
-
-        <label for="time">Time</label><br>
-        <input type="time" id="time" name="time" required>
-        <br><br>
-
-        <label for="venue">Venue</label><br>
-        <input
-            type="text"
-            id="venue"
-            name="venue"
-            placeholder="Enter Venue"
-            required>
-        <br><br>
-
-        <label for="description">Description</label><br>
-        <textarea
-            id="description"
-            name="description"
-            rows="5"
-            placeholder="Enter Event Description"
-            required></textarea>
-        <br><br>
-
-        <label for="organiser-name">Organiser Name</label><br>
-        <input
-            type="text"
-            id="organiser-name"
-            name="organiserName"
-            placeholder="Enter Organiser Name"
-            required>
-        <br><br>
-
-        <label for="organiser-email">Organiser Email</label><br>
-        <input
-            type="email"
-            id="organiser-email"
-            name="organiserEmail"
-            placeholder="example@email.com"
-            required>
-        <br><br>
-
-        <button type="submit">Submit Event</button>
-
-    </form>
-</main>
-
-<footer>
-    <p>CampusConnect - 2026</p>
-    <p>Developed by Navyasree</p>
-</footer>
-
-</body>
+                <button type="submit">Add Event</button>
+            </form>
+        </section>
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="event-detail.html">Event Detail</a>
+                <a href="add-event.html">Add Event</a>
+                <a href="my-registrations.html">My Registrations</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Add New Event</h1>
+            <form>
+                <label for="event-name">Event Name</label><br>
+                <input
+                type="text"
+                id="event-name"
+                name="eventName"
+                placeholder="e.g. Annual Tech Fest"
+                required>
+                <br><br>
+                <label for="category">Category</label><br>
+                <select id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Fest">Fest</option>
+                    <option value="Workshop">Workshop</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Club">Club</option>
+                </select>
+                <br><br>
+                <label for="date">Date</label><br>
+                <input type="date" id="date" name="date" required>
+                <br><br>
+                <label for="time">Time</label><br>
+                <input type="time" id="time" name="time" required>
+                <br><br>
+                <label for="venue">Venue</label><br>
+                <input
+                type="text"
+                id="venue"
+                name="venue"
+                placeholder="Enter Venue"
+                required>
+                <br><br>
+                <label for="description">Description</label><br>
+                <textarea
+                id="description"
+                name="description"
+                rows="5"
+                placeholder="Enter Event Description"
+                required></textarea>
+                <br><br>
+                <label for="organiser-name">Organiser Name</label><br>
+                <input
+                type="text"
+                id="organiser-name"
+                name="organiserName"
+                placeholder="Enter Organiser Name"
+                required>
+                <br><br>
+                <label for="organiser-email">Organiser Email</label><br>
+                <input
+                type="email"
+                id="organiser-email"
+                name="organiserEmail"
+                placeholder="example@email.com"
+                required>
+                <br><br>
+                <button type="submit">Submit Event</button>
+            </form>
+        </main>
+        <footer>
+            <p>CampusConnect - 2026</p>
+            <p>Developed by Navyasree</p>
+        </footer>
+    </body>
 </html>
