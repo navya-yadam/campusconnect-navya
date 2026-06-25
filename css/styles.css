@@ -353,6 +353,7 @@ footer {
     padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
+    transition: background 0.3s ease;
 }
 
 .browse-events {
@@ -367,6 +368,7 @@ footer {
     padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
+    transition: background 0.3s ease;
 }
 .browse-events a:hover {
     background: #c45200;
