@@ -1,114 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="css/styles.css">
-        <title>CampusConnect - Add Event</title>
-    </head>
-    <body>
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>CampusConnect - Add Event</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="event-detail.html">Event Detail</a>
+            <a href="add-event.html">Add Event</a>
+            <a href="my-registrations.html">My Registrations</a>
+        </nav>
+    </header>
+    <main>
         <section class="form-container">
+
             <h2>Add Event</h2>
-            <form>
+            <form id="add-event-form">
                 <div class="form-group">
-                    <label for="title">Event Title</label>
-                    <input type="text" id="title" placeholder="Enter event title">
+                    <label for="title">Event Name</label>
+                    <input type="text" id="event-name" placeholder="Enter event name">
+                    <small id="name-error"></small>
                 </div>
 
                 <div class="form-group">
                     <label for="category">Category</label>
                     <select id="category">
-                        <option>Fest</option>
-                        <option>Workshop</option>
-                        <option>Sports</option>
-                        <option>Club</option>
+                        <option value="">Select Category</option>
+                        <option value="fest">Fest</option>
+                        <option value="workshop">Workshop</option>
+                        <option value="sports">Sports</option>
+                        <option value="club">Club</option>
                     </select>
+                    <small id="cat-error"></small>
                 </div>
 
                 <div class="form-group">
                     <label for="date">Date</label>
-                    <input type="date" id="date">
+                    <input type="date" id="event-date">
+                    <small id="date-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time">
+                    <small id="time-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="venue">Venue</label>
+                    <input type="text" id="venue" placeholder="Enter venue">
+                    <small id="venue-error"></small>
                 </div>
 
-                    <div class="form-group">
+                <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea id="description" rows="5"></textarea>
+                    <textarea id="description" rows="5" placeholder="Enter event description"></textarea>
+                    <small id="desc-error"></small>
                 </div>
-
+                <div class="form-group">
+                    <label for="organiser-name">Organiser Name</label>
+                    <input type="text" id="organiser-name" placeholder="Enter organiser name">
+                    <small id="organiser-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="organiser-email">Organiser Email</label>
+                    <input type="email" id="organiser-email" placeholder="example@gmail.com">
+                    <small id="email-error"></small>
+                </div>
                 <button type="submit">Add Event</button>
             </form>
         </section>
-        <header>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="events.html">Events</a>
-                <a href="event-detail.html">Event Detail</a>
-                <a href="add-event.html">Add Event</a>
-                <a href="my-registrations.html">My Registrations</a>
-            </nav>
-        </header>
-        <main>
-            <h1>Add New Event</h1>
-            <form>
-                <label for="event-name">Event Name</label><br>
-                <input
-                type="text"
-                id="event-name"
-                name="eventName"
-                placeholder="e.g. Annual Tech Fest"
-                required>
-                <br><br>
-                <label for="category">Category</label><br>
-                <select id="category" name="category" required>
-                    <option value="">Select Category</option>
-                    <option value="Fest">Fest</option>
-                    <option value="Workshop">Workshop</option>
-                    <option value="Sports">Sports</option>
-                    <option value="Club">Club</option>
-                </select>
-                <br><br>
-                <label for="date">Date</label><br>
-                <input type="date" id="date" name="date" required>
-                <br><br>
-                <label for="time">Time</label><br>
-                <input type="time" id="time" name="time" required>
-                <br><br>
-                <label for="venue">Venue</label><br>
-                <input
-                type="text"
-                id="venue"
-                name="venue"
-                placeholder="Enter Venue"
-                required>
-                <br><br>
-                <label for="description">Description</label><br>
-                <textarea
-                id="description"
-                name="description"
-                rows="5"
-                placeholder="Enter Event Description"
-                required></textarea>
-                <br><br>
-                <label for="organiser-name">Organiser Name</label><br>
-                <input
-                type="text"
-                id="organiser-name"
-                name="organiserName"
-                placeholder="Enter Organiser Name"
-                required>
-                <br><br>
-                <label for="organiser-email">Organiser Email</label><br>
-                <input
-                type="email"
-                id="organiser-email"
-                name="organiserEmail"
-                placeholder="example@email.com"
-                required>
-                <br><br>
-                <button type="submit">Submit Event</button>
-            </form>
-        </main>
-        <footer>
-            <p>CampusConnect - 2026</p>
-            <p>Developed by Navyasree</p>
-        </footer>
-    </body>
+    </main>
+    <footer>
+        <p>CampusConnect - 2026</p>
+        <p>Developed by Navyasree</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
 </html>
