@@ -368,6 +368,9 @@ footer {
     border-radius: 8px;
     text-decoration: none;
 }
+.browse-events a:hover {
+    background: #c45200;
+}
 
 #registrations-list p {
     grid-column: 1 / -1;
